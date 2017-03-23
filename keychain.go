@@ -14,9 +14,9 @@ func UserPasswd(server, preferredUser string) (string, string, error) {
 	if err != nil {
 		if preferredUser != "" {
 			return "", "", fmt.Errorf("error: loading password for %s@%s: %v", preferredUser, server, err)
-		} else {
-			return "", "", fmt.Errorf("error: loading password for %s: %v", server, err)
 		}
+		return "", "", fmt.Errorf("error: loading password for %s: %v", server, err)
 	}
+
 	return user, passwd, nil
 }
