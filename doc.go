@@ -4,6 +4,6 @@
 
 // Package keychain implements access to the passwords and other keys
 // stored in the system-provided keychain.
-package keychain // import "go-darwin.dev/keychain"
+package keychain // import "github.com/go-darwin/keychain"
 
 // BUG(zchee): Package keychain now only implemented on macOS.
